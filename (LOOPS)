@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class NumberSequenceProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("--- Number Sequence Loop (Max 30) ---");
+        
+        
+        for (int i = 1; i <= 100; i++) {
+            
+            
+            if (i == 30) {
+                System.out.println("Reached 30. Stopping program via break.");
+                break;
+            }
+            
+            
+            if (i == 7) {
+                continue; 
+            }
+            
+            
+            if (i % 3 == 0) {
+                System.out.println("Number: " + i);
+            }
+        }
+        
+        scanner.close();
+    }
+}
